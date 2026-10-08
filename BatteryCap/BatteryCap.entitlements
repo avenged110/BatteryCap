@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	No App Sandbox: SMAppService refuses to register a daemon for a
+	sandboxed app unless the daemon is sandboxed too ("SMAppService target
+	executable must be sandboxed because the app is sandboxed"), and the
+	daemon cannot be, since it writes the SMC.
+	-->
+</dict>
+</plist>

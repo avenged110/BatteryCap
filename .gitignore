@@ -1,0 +1,6 @@
+BatteryCap.xcodeproj/xcuserdata/
+BatteryCap.xcodeproj/project.xcworkspace/xcuserdata/
+/build/
+.DS_Store
+DerivedData/
+*.dmg

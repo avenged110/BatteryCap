@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96601AE31F481FF73C9E5F02 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = A2F9DBE269936A11A688DB1A /* COPYING */; };
+		BC0000000000000000000011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000001 /* AppDelegate.swift */; };
+		BC0000000000000000000012 /* DaemonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000002 /* DaemonClient.swift */; };
+		BC0000000000000000000013 /* DaemonInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000003 /* DaemonInstaller.swift */; };
+		BC0000000000000000000014 /* BCShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC000000000000000000000C /* BCShared.swift */; };
+		BC0000000000000000000015 /* CodeSigning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC000000000000000000000D /* CodeSigning.swift */; };
+		BC0000000000000000000016 /* BatteryCapDaemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000005 /* BatteryCapDaemon.swift */; };
+		BC0000000000000000000017 /* ChargeLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000006 /* ChargeLimit.swift */; };
+		BC0000000000000000000018 /* PowerSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000007 /* PowerSupport.swift */; };
+		BC0000000000000000000019 /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000008 /* SMC.swift */; };
+		BC000000000000000000001A /* SMCChargeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000009 /* SMCChargeControl.swift */; };
+		BC000000000000000000001B /* BCShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC000000000000000000000C /* BCShared.swift */; };
+		BC000000000000000000001C /* CodeSigning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC000000000000000000000D /* CodeSigning.swift */; };
+		BC000000000000000000001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000004 /* Assets.xcassets */; };
+		BC000000000000000000001E /* batterycapd in Embed Daemon */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000010 /* batterycapd */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BC0000000000000000000040 /* IntegrityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000041 /* IntegrityCheck.swift */; };
+		BC0000000000000000000042 /* BCLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000043 /* BCLogging.swift */; };
+		BC0000000000000000000044 /* BCLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000043 /* BCLogging.swift */; };
+		BC0000000000000000000045 /* DebugLogKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000046 /* DebugLogKit.swift */; };
+		BC0000000000000000000047 /* DebugLogKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0000000000000000000046 /* DebugLogKit.swift */; };
+		BC000000000000000000004A /* SettingsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC000000000000000000004B /* SettingsKit.swift */; };
+		BC000000000000000000004C /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = BC000000000000000000004D /* Credits.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC000000000000000000002F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0000000000000000000030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0000000000000000000026;
+			remoteInfo = batterycapd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC000000000000000000002A /* Embed Daemon */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolder = Wrapper;
+			files = (
+				BC000000000000000000001E /* batterycapd in Embed Daemon */,
+			);
+			name = "Embed Daemon";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A2F9DBE269936A11A688DB1A /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		BC0000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC0000000000000000000002 /* DaemonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonClient.swift; sourceTree = "<group>"; };
+		BC0000000000000000000003 /* DaemonInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonInstaller.swift; sourceTree = "<group>"; };
+		BC0000000000000000000004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC0000000000000000000005 /* BatteryCapDaemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCapDaemon.swift; sourceTree = "<group>"; };
+		BC0000000000000000000006 /* ChargeLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeLimit.swift; sourceTree = "<group>"; };
+		BC0000000000000000000007 /* PowerSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSupport.swift; sourceTree = "<group>"; };
+		BC0000000000000000000008 /* SMC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMC.swift; sourceTree = "<group>"; };
+		BC0000000000000000000009 /* SMCChargeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCChargeControl.swift; sourceTree = "<group>"; };
+		BC000000000000000000000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC000000000000000000000C /* BCShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCShared.swift; sourceTree = "<group>"; };
+		BC000000000000000000000D /* CodeSigning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSigning.swift; sourceTree = "<group>"; };
+		BC000000000000000000000E /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
+		BC000000000000000000000F /* BatteryCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0000000000000000000010 /* batterycapd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = batterycapd; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0000000000000000000041 /* IntegrityCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrityCheck.swift; sourceTree = "<group>"; };
+		BC0000000000000000000043 /* BCLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCLogging.swift; sourceTree = "<group>"; };
+		BC0000000000000000000046 /* DebugLogKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLogKit.swift; sourceTree = "<group>"; };
+		BC000000000000000000004B /* SettingsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKit.swift; sourceTree = "<group>"; };
+		BC000000000000000000004D /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		BC000000000000000000004E /* BatteryCap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryCap.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0000000000000000000028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		BC000000000000000000002D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0000000000000000000020 = {
+			isa = PBXGroup;
+			children = (
+				BC0000000000000000000021 /* BatteryCap */,
+				BC0000000000000000000022 /* batterycapd */,
+				BC0000000000000000000023 /* Shared */,
+				BC0000000000000000000024 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0000000000000000000021 /* BatteryCap */ = {
+			isa = PBXGroup;
+			children = (
+				BC0000000000000000000001 /* AppDelegate.swift */,
+				BC0000000000000000000002 /* DaemonClient.swift */,
+				BC0000000000000000000003 /* DaemonInstaller.swift */,
+				BC0000000000000000000041 /* IntegrityCheck.swift */,
+				BC000000000000000000004B /* SettingsKit.swift */,
+				BC0000000000000000000004 /* Assets.xcassets */,
+				BC000000000000000000004D /* Credits.html */,
+				A2F9DBE269936A11A688DB1A /* COPYING */,
+				BC000000000000000000004E /* BatteryCap.entitlements */,
+			);
+			path = BatteryCap;
+			sourceTree = "<group>";
+		};
+		BC0000000000000000000022 /* batterycapd */ = {
+			isa = PBXGroup;
+			children = (
+				BC0000000000000000000005 /* BatteryCapDaemon.swift */,
+				BC0000000000000000000006 /* ChargeLimit.swift */,
+				BC0000000000000000000007 /* PowerSupport.swift */,
+				BC0000000000000000000008 /* SMC.swift */,
+				BC0000000000000000000009 /* SMCChargeControl.swift */,
+				BC000000000000000000000A /* Info.plist */,
+			);
+			path = batterycapd;
+			sourceTree = "<group>";
+		};
+		BC0000000000000000000023 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BC000000000000000000000C /* BCShared.swift */,
+				BC000000000000000000000D /* CodeSigning.swift */,
+				BC0000000000000000000043 /* BCLogging.swift */,
+				BC0000000000000000000046 /* DebugLogKit.swift */,
+				BC000000000000000000000E /* Modules */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BC0000000000000000000024 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC000000000000000000000F /* BatteryCap.app */,
+				BC0000000000000000000010 /* batterycapd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0000000000000000000025 /* BatteryCap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0000000000000000000038 /* Build configuration list for PBXNativeTarget "BatteryCap" */;
+			buildPhases = (
+				BC0000000000000000000027 /* Sources */,
+				BC0000000000000000000028 /* Frameworks */,
+				BC0000000000000000000029 /* Resources */,
+				BC000000000000000000002A /* Embed Daemon */,
+				BC0000000000000000000049 /* Generate Daemon Plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC000000000000000000002E /* PBXTargetDependency */,
+			);
+			name = BatteryCap;
+			productName = BatteryCap;
+			productReference = BC000000000000000000000F /* BatteryCap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC0000000000000000000026 /* batterycapd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0000000000000000000039 /* Build configuration list for PBXNativeTarget "batterycapd" */;
+			buildPhases = (
+				BC000000000000000000002C /* Sources */,
+				BC000000000000000000002D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			name = batterycapd;
+			productName = batterycapd;
+			productReference = BC0000000000000000000010 /* batterycapd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0000000000000000000030 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					BC0000000000000000000025 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					BC0000000000000000000026 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = BC0000000000000000000037 /* Build configuration list for PBXProject "BatteryCap" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC0000000000000000000020;
+			preferredProjectObjectVersion = 90;
+			productRefGroup = BC0000000000000000000024 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0000000000000000000025 /* BatteryCap */,
+				BC0000000000000000000026 /* batterycapd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC0000000000000000000029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				BC000000000000000000001D /* Assets.xcassets in Resources */,
+				BC000000000000000000004C /* Credits.html in Resources */,
+				96601AE31F481FF73C9E5F02 /* COPYING in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC0000000000000000000049 /* Generate Daemon Plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Library/LaunchServices/batterycapd",
+			);
+			name = "Generate Daemon Plist";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Library/LaunchDaemons/$(BC_APP_ID).daemon.plist",
+			);
+			shellPath = /bin/sh;
+			shellScript = (
+				"set -euo pipefail",
+				"# Generates the SMAppService launchd plist from build settings, so its Label,",
+				"# Mach service and associated bundle identifier can never drift from the",
+				"# bundle identifiers (a mismatch leaves the daemon unreachable).",
+				"DAEMON_ID=\"${BC_APP_ID}.daemon\"",
+				"CONTENTS=\"${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}\"",
+				"DEST=\"${CONTENTS}/Library/LaunchDaemons\"",
+				"PLIST=\"${DEST}/${DAEMON_ID}.plist\"",
+				"PB=/usr/libexec/PlistBuddy",
+				"",
+				"# The script sandbox only permits touching the declared output, so remove just",
+				"# that (PlistBuddy would otherwise add to the old file). A plist left by a",
+				"# previous BC_APP_ID needs a Clean Build Folder.",
+				"rm -f \"${PLIST}\"",
+				"mkdir -p \"${DEST}\"",
+				"$PB -c \"Add :Label string ${DAEMON_ID}\" \\",
+				"    -c \"Add :BundleProgram string Contents/Library/LaunchServices/batterycapd\" \\",
+				"    -c \"Add :AssociatedBundleIdentifiers array\" \\",
+				"    -c \"Add :AssociatedBundleIdentifiers:0 string ${BC_APP_ID}\" \\",
+				"    -c \"Add :MachServices dict\" \\",
+				"    -c \"Add :MachServices:${DAEMON_ID} bool true\" \\",
+				"    -c \"Add :RunAtLoad bool true\" \\",
+				"    -c \"Add :KeepAlive dict\" \\",
+				"    -c \"Add :KeepAlive:SuccessfulExit bool false\" \\",
+				"    -c \"Add :ProcessType string Adaptive\" \\",
+				"    -c \"Add :EnableTransactions bool false\" \\",
+				"    \"${PLIST}\" >/dev/null",
+				"echo \"Generated ${PLIST}\"",
+				"",
+				"# Build-time integrity check: the embedded daemon must carry the identifier",
+				"# the plist and the app expect.",
+				"if [ \"${CODE_SIGNING_ALLOWED:-YES}\" = \"YES\" ]; then",
+				"    DAEMON_BIN=\"${CONTENTS}/Library/LaunchServices/batterycapd\"",
+				"    ACTUAL_ID=$(codesign -dv \"${DAEMON_BIN}\" 2>&1 | sed -n 's/^Identifier=//p')",
+				"    if [ \"${ACTUAL_ID}\" != \"${DAEMON_ID}\" ]; then",
+				"        echo \"error: embedded daemon is signed as '${ACTUAL_ID}', expected '${DAEMON_ID}'\"",
+				"        exit 1",
+				"    fi",
+				"fi",
+				"",
+			);
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0000000000000000000027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				BC0000000000000000000011 /* AppDelegate.swift in Sources */,
+				BC0000000000000000000012 /* DaemonClient.swift in Sources */,
+				BC0000000000000000000013 /* DaemonInstaller.swift in Sources */,
+				BC0000000000000000000014 /* BCShared.swift in Sources */,
+				BC0000000000000000000015 /* CodeSigning.swift in Sources */,
+				BC0000000000000000000040 /* IntegrityCheck.swift in Sources */,
+				BC0000000000000000000042 /* BCLogging.swift in Sources */,
+				BC0000000000000000000045 /* DebugLogKit.swift in Sources */,
+				BC000000000000000000004A /* SettingsKit.swift in Sources */,
+			);
+		};
+		BC000000000000000000002C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				BC0000000000000000000016 /* BatteryCapDaemon.swift in Sources */,
+				BC0000000000000000000017 /* ChargeLimit.swift in Sources */,
+				BC0000000000000000000018 /* PowerSupport.swift in Sources */,
+				BC0000000000000000000019 /* SMC.swift in Sources */,
+				BC000000000000000000001A /* SMCChargeControl.swift in Sources */,
+				BC000000000000000000001B /* BCShared.swift in Sources */,
+				BC000000000000000000001C /* CodeSigning.swift in Sources */,
+				BC0000000000000000000044 /* BCLogging.swift in Sources */,
+				BC0000000000000000000047 /* DebugLogKit.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC000000000000000000002E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0000000000000000000026 /* batterycapd */;
+			targetProxy = BC000000000000000000002F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC0000000000000000000031 /* Debug configuration for PBXProject "BatteryCap" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				BC_APP_ID = com.BatteryCap;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BVZNKTPJ7C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.8;
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Shared/Modules";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		BC0000000000000000000032 /* Release configuration for PBXProject "BatteryCap" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				BC_APP_ID = com.BatteryCap;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BVZNKTPJ7C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.8;
+				MARKETING_VERSION = 1.0.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Shared/Modules";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		BC0000000000000000000033 /* Debug configuration for PBXNativeTarget "BatteryCap" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = BatteryCap/BatteryCap.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 28;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryCap;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 avenged110. Licensed under GPL-3.0-only.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BC_APP_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_MEMORY_SAFETY = YES;
+				SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+			};
+			name = Debug;
+		};
+		BC0000000000000000000034 /* Release configuration for PBXNativeTarget "BatteryCap" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = BatteryCap/BatteryCap.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 28;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryCap;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 avenged110. Licensed under GPL-3.0-only.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BC_APP_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_MEMORY_SAFETY = YES;
+				SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+			};
+			name = Release;
+		};
+		BC0000000000000000000035 /* Debug configuration for PBXNativeTarget "batterycapd" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = batterycapd/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 15.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BC_APP_ID).daemon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_MEMORY_SAFETY = YES;
+			};
+			name = Debug;
+		};
+		BC0000000000000000000036 /* Release configuration for PBXNativeTarget "batterycapd" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = batterycapd/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 15.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BC_APP_ID).daemon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_MEMORY_SAFETY = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0000000000000000000037 /* Build configuration list for PBXProject "BatteryCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000000000000000000031 /* Debug configuration for PBXProject "BatteryCap" */,
+				BC0000000000000000000032 /* Release configuration for PBXProject "BatteryCap" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BC0000000000000000000038 /* Build configuration list for PBXNativeTarget "BatteryCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000000000000000000033 /* Debug configuration for PBXNativeTarget "BatteryCap" */,
+				BC0000000000000000000034 /* Release configuration for PBXNativeTarget "BatteryCap" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BC0000000000000000000039 /* Build configuration list for PBXNativeTarget "batterycapd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000000000000000000035 /* Debug configuration for PBXNativeTarget "batterycapd" */,
+				BC0000000000000000000036 /* Release configuration for PBXNativeTarget "batterycapd" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC0000000000000000000030 /* Project object */;
+}
